@@ -38,8 +38,7 @@ A full‑stack MERN application that enables citizens to report, track, and disc
 | Map         | OpenStreetMap + Leaflet             |
 | CAPTCHA     | Google reCAPTCHA (or custom)        |
 
-##**Deployment in : Vercel**
-
+**Deployment in : Vercel** 
 https://abar-nosto-a-community-issue-monito.vercel.app/login
 
 ## Project Structure
@@ -131,7 +130,7 @@ This project was developed collaboratively by:
 - Farah Tasnim 
 - Tasneem Jahan Masum 
 - Sabbir Hossain Prince
-- 
+  
 Each team member implemented their assigned modules independently. The main branch contains the integrated work.
 
 ## License
@@ -145,5 +144,8 @@ This project is CURRENTLY for educational purposes. All rights reserved.
 
 ---
 **Repository:** [(https://github.com/pretom26/Abar-Nosto-A-Community-Issue-Monitoring-Platform/)]
+
+
+
 **Deployment:** [(https://abar-nosto-a-community-issue-monito.vercel.app/login)]
 ```
