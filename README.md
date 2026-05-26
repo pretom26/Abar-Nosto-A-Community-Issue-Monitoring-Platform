@@ -23,10 +23,8 @@ A full‑stack MERN application that enables citizens to report, track, and disc
 - Report drafts are auto‑saved locally (offline‑capable) with a “load draft” reminder
 - Users can request the latest update on an issue (admin notification)
 - Admin‑generated issue summary (priority‑based, downloadable)
-
-**Additional features**
-- Follow issues and receive notifications (teammate’s module)
-- Interactive map with real‑time issue markers (teammate’s module)
+- Follow issues and receive notifications
+- Interactive map with real‑time issue markers 
 - Secure authentication (JWT) with role‑based access (admin / user)
 
 ## Tech Stack
@@ -88,7 +86,7 @@ Create a `.env` file in the `backend/` folder:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-# Optional: ImageKit keys (if using photo upload)
+# Optional: ImageKit keys (for using photo upload)
 IMAGEKIT_PUBLIC_KEY=...
 IMAGEKIT_PRIVATE_KEY=...
 IMAGEKIT_URL_ENDPOINT=...
@@ -119,33 +117,8 @@ npm run dev
 ```bash
 cd backend
 node scripts/seedAuthorities.js
+
 ```
-
-## API Endpoints (Main ones)
-
-| Method | Endpoint                     | Description                       | Access      |
-|--------|------------------------------|-----------------------------------|-------------|
-| POST   | `/api/auth/register`         | User registration                 | Public      |
-| POST   | `/api/auth/login`            | User login                        | Public      |
-| GET    | `/api/auth/me`               | Get current user (reputation)     | User        |
-| POST   | `/api/reports`               | Create a new report               | User        |
-| GET    | `/api/issues`                | List all issues                   | User        |
-| POST   | `/api/issues/:id/upvote`     | Upvote an issue                   | User        |
-| POST   | `/api/issues/:id/comments`   | Add a comment                     | User        |
-| GET    | `/api/issues/activities/feed`| Live activity feed                | User        |
-| GET    | `/api/admin/users`           | List all users (reputation)       | Admin       |
-| POST   | `/api/admin/users/:userId/reputation` | Adjust user reputation    | Admin       |
-| GET    | `/api/authorities`           | Get authority contacts            | User        |
-| POST   | `/api/authorities`           | Add authority (admin only)        | Admin       |
-| GET    | `/api/drafts`                | Get user’s draft report           | User        |
-| POST   | `/api/drafts`                | Save draft report                 | User        |
-| POST   | `/api/issues/:id/request-update` | Request latest update         | User        |
-| GET    | `/api/summary/issues/:id/summary` | Generate issue summary        | Admin       |
-
-> A full API collection is available in the project documentation.
-
-## Screenshots (optional)
-Add screenshots of the dashboard, map, admin panel, and reputation leaderboard here.
 
 ## Team & Contribution
 
@@ -159,19 +132,13 @@ Each team member implemented their assigned modules independently. The main bran
 
 ## License
 
-This project is for educational purposes. All rights reserved.
+This project is CURRENTLY for educational purposes. All rights reserved.
 
 ## Acknowledgements
 
-- Supervisors for guidance and feedback
-- OpenStreetMap for map tiles
-- ImageKit for image hosting (if used)
+- CSE471 (Brac University) Course Lecturers for guidance and feedback
 - All team members for their dedication
 
 ---
-**Repository:** [https://github.com/your-username/abar-nosto](https://github.com/your-username/abar-nosto)
+**Repository:** [[https://github.com/your-username/abar-nosto](https://github.com/pretom26/Abar-Nosto-A-Community-Issue-Monitoring-Platform/)
 ```
-
----
-
-Adjust the repository URL, your name, and team member details as needed. This README is ready to copy‑paste into your GitHub repo.
